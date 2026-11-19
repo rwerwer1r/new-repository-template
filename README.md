@@ -43,4 +43,4 @@ Git hooks are optional. The included Node.js scripts support documentation tooli
 
 ## Provenance
 
-Adapted from [mols3131d/new-repository-template](https://github.com/mols3131d/new-repository-template) under the MIT license. The original author's notice is retained in [LICENSE](LICENSE). This version does **not** install or sync Skills from the `mols3131d` account; any additional source must be explicitly chosen for the derived project.
+Adapted from [mols3131d/new-repository-template](https://github.com/mols3131d/new-repository-template) under the MIT license. The original copyright and license notice is retained in [Third-Party Notices](THIRD_PARTY_NOTICES.md). This version does **not** install or sync Skills from the `mols3131d` account; any additional source must be explicitly chosen for the derived project.

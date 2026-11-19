@@ -1,7 +1,12 @@
+# Third-Party Notices
+
+This repository contains material adapted from [mols3131d/new-repository-template](https://github.com/mols3131d/new-repository-template).
+
+The following copyright and license notice applies to the adapted original material:
+
 MIT License
 
 Copyright (c) 2026 mols
-Copyright (c) 2026 taejun
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
