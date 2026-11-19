@@ -1,46 +1,24 @@
 # New Repository Template
 
-A technology-agnostic starter for projects owned by **rwerwer1r**. It includes agent instructions, documentation structure, GitHub issue/PR templates, formatting tools, and CI checks. Each new project chooses its own language, application tests and deployment workflow.
+Minimal starting files for repositories created by **rwerwer1r**.
 
-## Start a project
+## Create a repository
 
-1. Select **Use this template** on GitHub, and create the new repository in the intended account.
-2. Read [Initial Tool Setup](docs/tools/initial-setup.md). Review external downloads and generated files before authorizing installation or local Git changes.
-3. If you want the shared tools and agent integration, install [mise](https://mise.jdx.dev/) and run:
+Use GitHub's **Use this template** action, choose the intended owner, and then replace this README with the new project's purpose and setup instructions.
 
-```sh
-mise install
-mise run setup
-mise run check
-```
+This starter intentionally includes no application runtime, external agent dependency, download script, or automatic setup step. Add tools and checks only after the new project has a defined stack.
 
-`setup` resolves the declared Rulesync source, generates agent projections, updates generated ignore entries, and configures the clone-local [Git commit template](docs/tools/git/README.md). Inspect `rulesync.lock` before committing it. See [Project Setup](docs/guides/project-setup.md) for application-specific adaptation and verification.
+## Included
 
-## What's included
+- [AGENTS.md](AGENTS.md): local agent guardrails for this starter.
+- [.gitignore](.gitignore): ignores common transient files.
+- [Issue template](.github/ISSUE_TEMPLATE/task.md) and [PR template](.github/pull_request_template.md): concise collaboration prompts.
 
-| Area | Starting point |
-| --- | --- |
-| Agent instructions | [AGENTS.md](AGENTS.md) and [agent lifecycle](docs/development/agents/assets.md) |
-| Optional agent Skills | [rulesync.jsonc](rulesync.jsonc) starts with the public [Rulesync](https://github.com/dyoshikawa/rulesync) Skill; add only explicitly reviewed sources |
-| Tooling | [mise.toml](mise.toml) configures Node, rumdl, Biome, Lefthook and Rulesync |
-| Documentation | [docs/](docs/README.md) contains goal, architecture, development and tool guides; [docs index](docs/INDEX.tsv) is generated |
-| Collaboration | [issue forms](.github/ISSUE_TEMPLATE/), [PR template](.github/pull_request_template.md), and [authoring aids](.github/templates/README.md) |
-| Work notes | [.inbox/](.inbox/README.md) provides disposable research and handoff scaffolds; no past project records are included |
+For optional guides and writing templates, select individual files from the separately maintained [rwerwer1r/catalog](https://github.com/rwerwer1r/catalog). Those assets are **not** installed or synced automatically.
 
-## Everyday commands
+## First changes
 
-| Action | Command |
-| --- | --- |
-| Format supported Markdown, code and configuration | `mise run format` (writes files) |
-| Check Markdown, Biome and Lefthook | `mise run check` |
-| Validate Rulesync declaration | `mise run agents-check` |
-| Preview projections after setup | `mise run agents-preview` |
-| Reinstall from a reviewed lock | `mise run agents-restore` |
-| Deliberately update upstream revisions | `mise run agents-refresh` |
-| Preview/retire generated targets | `mise run agents-retire -- <targets> --features <features> [--apply]` |
-
-Git hooks are optional. The included Node.js scripts support documentation tooling; they do **not** determine the application language. Shared CI does not replace application tests. See [Tools](docs/tools/README.md).
-
-## Provenance
-
-Adapted from [mols3131d/new-repository-template](https://github.com/mols3131d/new-repository-template) under the MIT license. The original copyright and license notice is retained in [Third-Party Notices](THIRD_PARTY_NOTICES.md). This version does **not** install or sync Skills from the `mols3131d` account; any additional source must be explicitly chosen for the derived project.
+1. Define the project's responsibility and README.
+2. Select its language, dependencies, tests, and CI.
+3. Adapt or delete the starter files that do not apply.
+4. Review repository permissions and branch rules in the **new repository**. GitHub template creation does not guarantee the desired settings.
